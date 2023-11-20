@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Card from './Card';
+import CardDynamic from './CardDynamic';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card />
+      <CardDynamic title="První karta" description="Popis první karty" link="https://vitejs.dev/guide/" />
+      <CardDynamic title="Druhá karta" description="Popis druhé karty" link="#" />
+      <CardDynamic title="Třetí karta" description="Popis třetí karty" link="#" />
+      <CardDynamic title="Čtvrtá karta" description="Popis čtvrté karty" link="#" />
     </div>
   );
 }
